@@ -1,0 +1,13 @@
+import Header from "../../components/Header"
+
+function Movies() {
+
+    return (
+        <div>
+            <h1>Movies</h1>
+            <p>Essa é a movies</p>
+        </div>
+    )
+}
+
+export default Movies
