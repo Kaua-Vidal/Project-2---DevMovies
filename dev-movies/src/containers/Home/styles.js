@@ -16,7 +16,7 @@ export const Background = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         
     }
 `
@@ -55,4 +55,10 @@ export const Poster = styled.div`
         width: 350px;
         border-radius: 30px;
     }
+`
+
+export const ContainerButtons = styled.div`
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
 `
