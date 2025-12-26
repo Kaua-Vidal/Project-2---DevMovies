@@ -6,7 +6,7 @@ import DefaultLayout from '../layout/DefaultLayout'
 
 function Router() {
 
-    return (
+    return (  
         <Routes>
             <Route element={<DefaultLayout/>}>
                 <Route path='/' element={<Home />} />

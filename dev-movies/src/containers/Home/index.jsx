@@ -1,12 +1,40 @@
+import { useState } from "react"
 import Header from "../../components/Header"
+import api from '../../services/api'
+import { Background, Container, Info, Poster } from './styles'
+import { useEffect } from "react";
 
 function Home() {
 
+    const [movie, setMovie] = useState();
+
+    useEffect(() => {
+        async function getMovies() {
+            const { data: { results } } = await api.get('/movie/popular')
+
+            setMovie(results[0]);
+        }
+
+        getMovies()
+    }, [])
+
+
     return (
-        <div>
-            <h1>Home</h1>
-            <p>Essa é a Home</p>
-        </div>
+        <>
+            {movie && (
+                <Background img={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}>
+                    <Container>
+                        <Info>
+                            <h1>{movie.title}</h1>
+                            <p>{movie.overview}</p>
+                        </Info>
+                        <Poster>
+                            <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="capa-do-filme" />
+                        </Poster>
+                    </Container>
+                </Background>
+            )}
+        </>
     )
 }
 
