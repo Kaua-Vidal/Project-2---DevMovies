@@ -27,16 +27,6 @@ Users can search for movies, explore movie details and interact with the movie l
 
 ---
 
-## 🎥 Demo
-
-Add a GIF or short clip showing the app in action (replace the link below with your actual GIF path):
-
-![DevMovies Demo](./demo.gif)
-
-> 💡 This GIF should show searching movies, browsing results, and opening a movie detail.
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
