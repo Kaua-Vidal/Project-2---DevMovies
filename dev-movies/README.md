@@ -1,16 +1,105 @@
-# React + Vite
+# 🎬 DevMovies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web application developed with **ReactJS**, acting as a dynamic movie catalogue.  
+Users can search for movies, explore movie details and interact with the movie list.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+✔️ Movie search by title  
+✔️ Dynamic movie list display  
+✔️ Detailed view for individual movies  
+✔️ Responsive UI  
+✔️ Integration with a movie API (TMDB or similar)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Tools |
+|---------|-------|
+| Framework | ReactJS |
+| Routing | React Router DOM |
+| HTTP Client | Axios |
+| Styling | CSS / Styled-components (if used) |
+| Build Tool | Vite or Create React App (depending on your setup) |
+
+---
+
+## 🎥 Demo
+
+Add a GIF or short clip showing the app in action (replace the link below with your actual GIF path):
+
+![DevMovies Demo](./demo.gif)
+
+> 💡 This GIF should show searching movies, browsing results, and opening a movie detail.
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Kaua-Vidal/Project-2---DevMovies.git
+cd Project-2---DevMovies/dev-movies
+```
+
+### 2. Install dependencies
+```
+pnpm install
+# or
+npm install
+# or
+yarn install
+```
+
+### 3. Create Environment Variables
+Create a .env file in the project root and add your Movie API key:
+```
+VITE_API_KEY=YOUR_TMDB_API_KEY
+VITE_API_BASE_URL=https://api.themoviedb.org/3
+```
+
+### 🚀 Running the App
+
+```
+pnpm run dev
+# or
+npm run dev
+# or
+yarn dev
+```
+The app should open in your browser at ```http://localhost:3000.```
+
+### 🧩 Project Structure
+```
+dev-movies/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── package.json
+└── README.md
+```
+
+### 🔗 API Integration
+
+This project consumes a third-party movie database API (such as TMDB) to fetch movie information, search results and details.
+You must provide your own API key in the .env file.
+
+### 🧾 License
+
+This project is licensed under the ISC License.
+
+### 👨‍💻 Author
+
+Kauã Vidal
+Built with ❤️ and ReactJS
