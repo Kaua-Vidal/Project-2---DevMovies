@@ -10,6 +10,7 @@ const scale = keyframes`
 `
 
 export const Background = styled.div`
+    position: relative;
     background-image: url(${(props) => props.img});
     height: 100vh;
     background-position: center;
@@ -17,14 +18,12 @@ export const Background = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     &::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
+        inset: 0;
         background-color: rgba(0, 0, 0, 0.7);
     }
 
@@ -36,6 +35,7 @@ export const Background = styled.div`
         width: 100%;
         height: 120px;
         background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+        z-index: 1;
     }
 `
 

@@ -3,9 +3,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     transition: background-color 500ms ease;
-    min-height: 100px;
+    height: 100px;
+    width: 100%;
     z-index: 99;
     position: fixed;
+    left: 0;
     top: 0;
     display: flex;
     justify-content: space-between;
